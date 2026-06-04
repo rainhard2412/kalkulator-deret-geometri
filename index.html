@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Deret Geometri</title>
+    <!-- Menghubungkan ke file CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="calculator-container">
+        <h2>Kalkulator Deret Geometri</h2>
+        <p class="subtitle">Hitung jumlah suku ke-n (Sn) dengan mudah</p>
+
+        <div class="form-group">
+            <label for="a">Suku Pertama (a)</label>
+            <input type="number" id="a" placeholder="Contoh: 2">
+        </div>
+
+        <div class="form-group">
+            <label for="r">Rasio (r)</label>
+            <input type="number" id="r" placeholder="Contoh: 3">
+        </div>
+
+        <div class="form-group">
+            <label for="n">Banyaknya Suku (n)</label>
+            <input type="number" id="n" placeholder="Contoh: 5" min="1">
+        </div>
+
+        <div class="form-group result-group">
+            <label for="sn">Hasil (Sn)</label>
+            <!-- Atribut readonly digunakan agar form ini hanya untuk menampilkan hasil -->
+            <input type="text" id="sn" placeholder="Hasil Sn akan muncul di sini" readonly>
+        </div>
+
+        <div class="button-group">
+            <button id="btn-hitung">Hitung Sn</button>
+            <button id="btn-reset" class="btn-secondary">Reset</button>
+        </div>
+
+        <div id="pesan-error" class="error-message"></div>
+    </div>
+
+    <!-- Menghubungkan ke file JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
